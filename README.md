@@ -1,7 +1,7 @@
 # LCSE
-%%                Latent common source extraction (LCSE)
-% LCSE seeks to construct a common latent representation of the SSVEP signal
-% subspace that is stable across multiple trials of EEG data.
+               Latent common source extraction (LCSE)
+LCSE seeks to construct a common latent representation of the SSVEP signal
+subspace that is stable across multiple trials of EEG data.
 
 % The spatial filter thus obtained improves the signal-to-noise ratio (SNR)
 % of the SSVEP components by removing nuisance signals that are irrelevant
