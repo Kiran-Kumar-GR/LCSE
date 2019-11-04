@@ -155,8 +155,12 @@ for i = 1 : block_number
     is_correct = (prediction == labels);
     acc(i) = mean(is_correct) * 100;
     accuracy=(acc(i)/100);
-    itrs(i) = log2(length(labels) + accuracy*log2(accuracy) + (1-accuracy)*log2((1-accuracy)/(length(labels)-1)))*60/Selection_time;
-end 
+    if accuracy ==1
+        itrs(i) = log2(length(labels))*60/Selection_time;
+    else
+        itrs(i) = (log2(length(labels)) + accuracy*log2(accuracy) + (1-accuracy)*log2((1-accuracy)/(length(labels)-1)))*60/Selection_time;
+    end
+ end 
 % mean accuracy
 Mean_acc=mean(acc)
 % mean ITR 
