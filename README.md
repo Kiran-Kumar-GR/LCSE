@@ -93,4 +93,4 @@ link : https://www.researchgate.net/profile/Kiran_Kumar_G_R
  
  Last revised : November 2019
  
- Please send suggestions/queries to the above email.
+ Please send suggestions/queries to the above email
